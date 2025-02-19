@@ -37,6 +37,7 @@ az login
 b. Create a Resource Group by run the command:
 az group create --name Mojeedrg --location eastus
 c. After creating your Resource Group, Use the command below to Create the Windows Server 2019 VM:
+
 az vm create \
   --resource-group Mojeedrg \
   --name mojvm \
