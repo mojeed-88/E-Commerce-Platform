@@ -1,0 +1,32 @@
+#Create a Resource Group by run the command:
+
+az group create --name Mojeedrg --location eastus
+
+#Use the Azure CLI command to create VM
+
+az vm create \
+  --resource-group Mojeedrg \
+  --name mojvm \
+  --image win2019datacenter \
+  --admin-username tiani \
+  --admin-password 'iusedstrongpwd125@' \
+  --size Standard_D2s_v3 \
+  --authentication-type password \
+  --public-ip-sku Standard
+
+#Allow RDP Access: The above command automatically sets up an inbound rule for RDP. If needed, you can manually open port 3389 using:
+
+az vm open-port --port 3389 --resource-group Mojeedrg --name Mojvm
+
+#Connect to Your VM
+Once the VM is created, retrieve its public IP address:
+
+az vm list-ip-addresses --resource-group Mojeedrg --name Mojvm --output table
+
+#Install a Web-server (IIS) on the Windows Server 2019 VM
+
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+# To restart service
+
+Restart-Service W3SVC

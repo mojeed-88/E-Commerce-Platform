@@ -1,0 +1,42 @@
+/* Cart Link */
+#cart-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cart-link:hover {
+    text-decoration: underline;
+}
+
+/* Product Details Modal */
+#product-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+#product-details button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-details button:hover {
+    background-color: #cc0000;
+}
+
+/* Product Item */
+.product-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}

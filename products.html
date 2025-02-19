@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-category">
+            <h2>Shoes</h2>
+            <div class="product-grid">
+                <div class="product-item" onclick="showProductDetails('Shoe 1', 49.99, 'images/shoes/shoe1.jpg')">
+                    <img src="images/shoes/shoe1.jpg" alt="Shoe 1">
+                    <p>Shoe 1 - $49.99</p>
+                    <button onclick="addToCart('Shoe 1', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Shoe 2', 59.99, 'images/shoes/shoe2.jpg')">
+                    <img src="images/shoes/shoe2.jpg" alt="Shoe 2">
+                    <p>Shoe 2 - $59.99</p>
+                    <button onclick="addToCart('Shoe 2', 59.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Shoe 3', 69.99, 'images/shoes/shoe3.jpg')">
+                    <img src="images/shoes/shoe3.jpg" alt="Shoe 3">
+                    <p>Shoe 3 - $69.99</p>
+                    <button onclick="addToCart('Shoe 3', 69.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Bags</h2>
+            <div class="product-grid">
+                <div class="product-item" onclick="showProductDetails('Bag 1', 39.99, 'images/bags/bag1.jpg')">
+                    <img src="images/bags/bag1.jpg" alt="Bag 1">
+                    <p>Bag 1 - $39.99</p>
+                    <button onclick="addToCart('Bag 1', 39.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Bag 2', 49.99, 'images/bags/bag2.jpg')">
+                    <img src="images/bags/bag2.jpg" alt="Bag 2">
+                    <p>Bag 2 - $49.99</p>
+                    <button onclick="addToCart('Bag 2', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Bag 3', 59.99, 'images/bags/bag3.jpg')">
+                    <img src="images/bags/bag3.jpg" alt="Bag 3">
+                    <p>Bag 3 - $59.99</p>
+                    <button onclick="addToCart('Bag 3', 59.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Wristwatches</h2>
+            <div class="product-grid">
+                <div class="product-item" onclick="showProductDetails('Watch 1', 99.99, 'images/wristwatches/watch1.jpg')">
+                    <img src="images/wristwatches/watch1.jpg" alt="Watch 1">
+                    <p>Watch 1 - $99.99</p>
+                    <button onclick="addToCart('Watch 1', 99.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Watch 2', 129.99, 'images/wristwatches/watch2.jpg')">
+                    <img src="images/wristwatches/watch2.jpg" alt="Watch 2">
+                    <p>Watch 2 - $129.99</p>
+                    <button onclick="addToCart('Watch 2', 129.99)">Add to Cart</button>
+                </div>
+                <div class="product-item" onclick="showProductDetails('Watch 3', 149.99, 'images/wristwatches/watch3.jpg')">
+                    <img src="images/wristwatches/watch3.jpg" alt="Watch 3">
+                    <p>Watch 3 - $149.99</p>
+                    <button onclick="addToCart('Watch 3', 149.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-details" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid #ccc; z-index: 1000;">
+        <button onclick="closeProductDetails()" style="float: right;">Close</button>
+        <div id="details-content"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 E-Commerce Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
