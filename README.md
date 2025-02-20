@@ -15,7 +15,17 @@ c. User authentication
 # Development Process
 1. Setting Up the Project Structure
 I organized the project with the following structure:
-/ecommerce-platform │ ├── index.html (Home Page) ├── products.html (Products Page) ├── styles.css (CSS for styling) ├── script.js (JavaScript for interactivity) ├── images/ (Folder for images) │ ├── shoes/ │ ├── bags/ │ └── wristwatches/
+
+(```/ecommerce-platform)
+│
+├── index.html          (Home Page)
+├── products.html       (Products Page)
+├── styles.css          (CSS for styling)
+├── script.js           (JavaScript for interactivity)
+├── images/             (Folder for images)
+│   ├── shoes/
+│   ├── bags/
+│   └── wristwatches/
 
 2. Building the Frontend
 The frontend was developed using HTML for structure, CSS for styling, and JavaScript for interactivity.(find the html,css, and js in the E-Commercr Platform folder)
