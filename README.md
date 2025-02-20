@@ -15,8 +15,7 @@ c. User authentication
 # Development Process
 1. Setting Up the Project Structure
 I organized the project with the following structure:
-
-/ecommerce-platform
+```/ecommerce-platform
 │
 ├── index.html          (Home Page)
 ├── products.html       (Products Page)
@@ -70,8 +69,9 @@ Install-WindowsFeature -name Web-Server -IncludeManagementTools
 
 ## To restart service Run:
 Restart-Service W3SVC
-
-# To Confirm if the Web Server has been installed properly, Run this "http://localhost/" on the browser of your Windows server 2019 VM 
+## Confirm your Installation
+To check if IIS is installed on your Windows Server, open a web browser and enter http://localhost/ in the address bar. If IIS is installed and running, you should see the default IIS welcome page.
+ 
 b. Step 2: Deploy the Web Files
 i.   Copy the E-Commerce files to C:\inetpub\wwwroot\ecommerce-platform.
 ii.  Open IIS Manager and add a new website:
