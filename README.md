@@ -16,7 +16,7 @@ c. User authentication
 1. Setting Up the Project Structure
 I organized the project with the following structure:
 
-(```/ecommerce-platform
+```/ecommerce-platform
 │
 ├── index.html          (Home Page)
 ├── products.html       (Products Page)
@@ -25,7 +25,7 @@ I organized the project with the following structure:
 ├── images/             (Folder for images)
 │   ├── shoes/
 │   ├── bags/
-│   └── wristwatches/)
+│   └── wristwatches/
 
 2. Building the Frontend
 The frontend was developed using HTML for structure, CSS for styling, and JavaScript for interactivity.(find the html,css, and js in the E-Commercr Platform folder)
