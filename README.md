@@ -15,21 +15,10 @@ c. User authentication
 # Development Process
 1. Setting Up the Project Structure
 I organized the project with the following structure:
-```
-/ecommerce-platform
-│
-├── index.html          (Home Page)
-├── products.html       (Products Page)
-├── styles.css          (CSS for styling)
-├── script.js           (JavaScript for interactivity)
-├── images/             (Folder for images)
-│   ├── shoes/
-│   ├── bags/
-│   └── wristwatches/
+/ecommerce-platform │ ├── index.html (Home Page) ├── products.html (Products Page) ├── styles.css (CSS for styling) ├── script.js (JavaScript for interactivity) ├── images/ (Folder for images) │ ├── shoes/ │ ├── bags/ │ └── wristwatches/
 
 2. Building the Frontend
-The frontend was developed using HTML for structure, CSS for styling, and JavaScript for interactivity.
-(find the html,css, and js in the E-Commercr Platform folder)
+The frontend was developed using HTML for structure, CSS for styling, and JavaScript for interactivity.(find the html,css, and js in the E-Commercr Platform folder)
 3. Deployed Windows Server 2019 VM on Azure using Azure CLI
 # Install Azure CLI If you haven’t already
 After installation of the Azure CLI,
@@ -63,8 +52,7 @@ a. Step 1: Install a Web-server (IIS) on the Windows Server 2019 VM
 i.  Open Server Manager > Manage > Add Roles and Features.
 ii. Select Web Server (IIS) and complete the installation.
 
-Alternatively, you can install the web server using by open the PowerShell on Windows server 2019 vm and run as Administrator,
-after the PowerShell terminal has opened, run the following scripts to install web servsr (IIS) automatically:
+Alternatively, you can install the web server using by open the PowerShell on Windows server 2019 vm and run as Administrator, after the PowerShell terminal has opened, run the following scripts to install web servsr (IIS) automatically:
 
 # To Install Web Server (IIS) Run:
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
@@ -73,8 +61,7 @@ Install-WindowsFeature -name Web-Server -IncludeManagementTools
 Restart-Service W3SVC
 
 ## Confirm your Installation
-To check if IIS is installed on your Windows Server, open a web browser and enter http://localhost/ in the address bar.
-If IIS is installed and running, you should see the default IIS welcome page.
+To check if IIS is installed on your Windows Server, open a web browser and enter http://localhost/ in the address bar. If IIS is installed and running, you should see the default IIS welcome page.
  
 b. Step 2: Deploy the Web Files
 i.   Copy the E-Commerce files to C:\inetpub\wwwroot\ecommerce-platform.
@@ -91,9 +78,7 @@ b. Monitor logs via Event Viewer and IIS logs for debugging.
 6. Version Control and GitHub: To ensure version control, I used Git and GitHub
 
 # Conclusion
-By leveraging HTML, CSS, and JavaScript for development and deploying via IIS on Windows Server 2019,
-I successfully built a scalable e-commerce platform. This project demonstrates the fundamentals of web hosting and
-deployment in a Windows environment, offering a structured approach for future web applications.
+By leveraging HTML, CSS, and JavaScript for development and deploying via IIS on Windows Server 2019, I successfully built a scalable e-commerce platform. This project demonstrates the fundamentals of web hosting and deployment in a Windows environment, offering a structured approach for future web applications.
 
 
 
