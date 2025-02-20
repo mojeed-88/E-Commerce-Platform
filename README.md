@@ -15,7 +15,8 @@ c. User authentication
 # Development Process
 1. Setting Up the Project Structure
 I organized the project with the following structure:
-```/ecommerce-platform
+```
+/ecommerce-platform
 │
 ├── index.html          (Home Page)
 ├── products.html       (Products Page)
