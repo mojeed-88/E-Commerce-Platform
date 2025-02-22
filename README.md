@@ -3,7 +3,6 @@ Design, Development, and Deployment of a Scalable E-Commerce Website Using HTML,
 # Introduction
 Developing and deploying a scalable e-commerce platform requires a robust architecture, efficient development practices, and a reliable hosting environment. In this project, I successfully built an e-commerce platform using HTML, CSS, and JavaScript and deployed it on a Windows Server 2019 environment using Internet Information Services (IIS). This article outlines the end-to-end process, from development to deployment.
 # Tech Stack
-```
 Frontend: HTML, CSS, JavaScript
 Hosting Server: Windows Server 2019
 Web Server: Internet Information Services (IIS)
